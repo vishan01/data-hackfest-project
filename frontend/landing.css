@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(#eaac8b,#b56576);
+    overflow: hidden;
+}
+
+#canvas{
+    position: absolute;
+    z-index: -1;
+}
+
+.contentContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #004e89;
+   
+}
+
+.title {
+    font-size: 180px;
+    margin: 0;
+    font-family: "play";
+
+}
+
+a {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-family: poppins;
+    font-size: 40px;
+    margin-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+}
+
+a:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+p {
+    font-size: 25px;
+    font-family: "Raleway";
+    font-weight: light;
+    width: 800px;
+    text-align: center;
+    color: white;
+}
+
