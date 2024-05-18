@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Study Room</title>
-    <link rel="stylesheet" href="room.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='room.css')}}">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script type="module"> import pdfjsDist from 'https://cdn.jsdelivr.net/npm/pdfjs-dist@4.1.392/+esm' </script>
   </head>
   <body>
     <div id="app">
       <div class="elements element1">
-        <!--**file is in public folder**-->
-        <iframe width="1400" height="590" src="public/BDA unit3.pdf" frameborder="0"></iframe>
+        <!--file is in public folder-->
+        <iframe width="1400" height="590" src="{{url_for('static',filename='public/BDA unit3.pdf')}}" frameborder="0"></iframe>
       </div>
       <div class="elements element2">
         <h1 id="timer">25:00</h1>
@@ -31,7 +31,7 @@
   src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/1019815936/favorites&amp;">
 </iframe>
       </div>
-    <script type="module" src="room.js"></script>
+    <script type="module" src="{{url_for('static',filename='room.js')}}"></script>
   </body>
 </html>
 

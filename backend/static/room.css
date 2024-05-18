@@ -1,0 +1,123 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 795px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background-image: linear-gradient(#eaac8b,#b56576);
+  align-items: center;
+  
+}
+
+#app {
+  background: radial-gradient(circle 200px at 40% 60%, rgba(0, 0, 255, 0.641),rgba(255,255,255,0)),
+                radial-gradient(circle 150px at 10% 90%, rgba(0, 0, 255, 0.641),rgba(255,255,255,0)),
+                radial-gradient(circle 300px at 60% 80%, rgba(0, 0, 255, 0.641),rgba(255,255,255,0)),
+                radial-gradient(circle 100px at 30% 100%, rgba(0, 0, 255, 0.641),rgba(255,255,255,0)),
+                radial-gradient(circle 200px at 80% 10%, rgba(0, 0, 255, 0.641),rgba(255,255,255,0)),
+                radial-gradient(circle 100px at 70% 20%, rgba(0, 0, 255, 0.641),rgba(255,255,255,0)),
+                radial-gradient(circle 400px at 90% 50%, rgba(0, 0, 255, 0.641),rgba(255,255,255,0)),
+                radial-gradient(circle 350px at 10% 20%, rgba(0, 0, 255, 0.641),rgba(255,255,255,0)),
+                radial-gradient(circle 100px at 30% 40%, rgba(0, 0, 255, 0.641),rgba(255,255,255,0));
+  display: grid;
+  grid-template-columns:  19vw 19vw 19vw 19vw 19vw;
+  grid-template-rows: 19vh 19vh 19vh 19vh 15vh;
+  grid-gap: 5px;
+  padding: 10px;
+  margin: none;
+  overflow: hidden;
+}
+
+.elements{
+  background-color: rgba(0, 0, 0, 0.497);
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0;
+  border: 0;
+}
+
+.element1{
+  grid-area: 1/1/5/6;
+}
+.element2{
+  grid-area: 5/2/6/3;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.element4{
+  grid-area: 5/1/6/2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.element5{
+  grid-area: 5/3/5/6;
+}
+
+#startButton {
+  background-color: white;
+  padding: 10px;
+  color: black;
+  width: 50px;
+  height: auto;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+#resetButton {
+  background-color: white;
+  padding: 10px;
+  color: black;
+  width: 50px;
+  height: auto;
+  border: none;
+  border-radius: 10px;
+}
+
+#timer {
+  margin: 0;
+  margin-bottom: 2px;
+}
+  
+input {
+  margin: none;
+  border: none;
+  padding: 10px;
+  color: black;
+  background-color: white;
+
+}
+
+input[type="file"] {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  text-transform: uppercase;
+  color: white;
+  background-color: #c0392b;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
