@@ -9,15 +9,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='landing.css')}}">
+    <title>Study Squad</title>
 </head>
 <body>
     <canvas id="canvas"></canvas>
     <div class="contentContainer">
-        <h1 class="title">ClipCapsule</h1>
-        <p>ClipCapsule is a web app that makes YouTube videos easy to digest by providing quick, clear summaries. Save time and get the main points without watching the whole video.</p>
-        <a href="login.html">Get Started</a>
+        <h1 class="title">Study Squad</h1>
+        <p>Study Squad is a web app that makes YouTube videos easy to digest by providing quick, clear summaries. Save time and get the main points without watching the whole video.</p>
+        <a href="/login">Get Started</a>
     </div>
 </body>
-<script src="landing.js"></script>
+<script src="{{url_for('static',filename='landing.js')}}"></script>
 </html>

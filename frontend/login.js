@@ -8,9 +8,9 @@
   // Your web app's Firebase configuration
   const firebaseConfig = {
     apiKey: "AIzaSyC4cCWfu8lG8g_tEA-j6RrbsNgPiM-3dNc",
-    authDomain: "brainbox-75c7e.firebaseapp.com",
-    projectId: "brainbox-75c7e",
-    storageBucket: "brainbox-75c7e.appspot.com",
+    authDomain: "Study Squad-75c7e.firebaseapp.com",
+    projectId: "Study Squad-75c7e",
+    storageBucket: "Study Squad-75c7e.appspot.com",
     messagingSenderId: "445624445622",
     appId: "1:445624445622:web:fa2a0502e2957064665417"
   };
@@ -20,8 +20,6 @@
 
   //inputs
   
-  
-
   const submit = document.getElementById('submit');
   submit.addEventListener("click",function(event) {
     event.preventDefault();
