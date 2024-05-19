@@ -15,7 +15,7 @@ def get_notes(api_key,video_id):
         # Generate notes from the text
         model = genai.GenerativeModel(
   model_name="gemini-1.5-flash-latest",
-  system_instruction="You are a note generator. You need to convert the given text into some couple of notes and wrap that notes into some HTML tags. Generate only the ul, li tags and notes and nothing else. Make some Bolder according to its importance. Create Atleast 6-15 notes.",
+  system_instruction="You are a note generator. You need to convert the given text into some couple of notes and wrap that notes into some HTML tags. Generate only the ul, li tags and notes and nothing else. Make some text Bolder according to its importance by using <b> tag. Create Atleast 6-15 notes.",
 )
         response = model.generate_content(input_text)
         return response.text
