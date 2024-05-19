@@ -1,12 +1,13 @@
 from flask import Flask, request, render_template, url_for,session, abort, redirect
 import bot 
-import env
+from dotenv import load_dotenv
 import pymongo
-
+import os
+load_dotenv()
 app = Flask(__name__)
-app.secret_key = env.SECRET_KEY
+app.secret_key = os.getenv("SECRET_KEY")
 
-client = pymongo.MongoClient(env.mongo_api)
+client = pymongo.MongoClient(os.getenv("DATABASE_URL"))
 db = client['studysquad']
 
 users = db['users']
