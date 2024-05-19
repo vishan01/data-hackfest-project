@@ -109,4 +109,4 @@ def save():
         notes.insert_one({'email':email,'notes':session['notes']})
     return redirect(url_for('ytnotes'))
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0")
