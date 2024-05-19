@@ -18,14 +18,13 @@
             <div class="user-data" id="user-data">
                 <div class="image" id="image">
                     <!--image is in public folder-->
-                    <img id="img" src="{{url_for('static',filename='public/user.jpeg')}}" alt="user-pic">
+                    <img id="img" src="{{url_for('static',filename='public/user.jpg')}}" style="height: 100%; width:100%;" alt="user-pic">
                 </div>
-                <p>User Data</p>
+                <p style="color:black;"><b>{{data[0]}}</b></p>
                
             </div>
             {%if data!=""%}
                <div style="text-align: left; ">
-                <p style="color: black; font-size: x-large; "><b>Name:</b> {{data[0]}}</p>
                 <p style="color: black; font-size: x-large; "><b>Email</b>: {{data[1]}}</p>
                 <p style="color: black; font-size: x-large; "><b>DOB: </b>{{data[2]}}</p>
             </div>
