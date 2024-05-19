@@ -1,4 +1,4 @@
-import './room.css'
+import "{{url_for('static',filename='room.css')}}"
 
 let timer;
     let minutes = 25;

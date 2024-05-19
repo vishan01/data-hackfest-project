@@ -87,7 +87,12 @@ h1{
 hr{
     width: 380px;
 }
-
-input[type="date"] {
-    background-color: #111631;
+a{
+    margin-top: 10px;
+    font-family: inter;
+    text-decoration: none;
+    color: #111631;
+}
+span{
+    font-weight: bold;
 }
