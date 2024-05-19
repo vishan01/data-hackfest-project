@@ -3,13 +3,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: poppins;
+
 }
 
 #prev {
     position: absolute;
     top: 25px;
     left: 15px;
+    font-family: poppins;
+    padding: 10px;
 }
 h1 {
     font-family: poppins;
@@ -38,8 +40,6 @@ li{
     background-color: rgba(250, 235, 215, 0.385);
     border: 1px solid rgba(250, 235, 215, 0.882) ;
     border-radius: 5px;
-    text-align: center;
-    font-size: large;
 }
 
 #prev {
@@ -49,3 +49,40 @@ li{
     padding: 10px;
     border-radius: 10px;
 }
+
+li {
+    color: rgba(50, 50, 50, 0.892);
+    font-size: 1.20rem;
+    padding: 15px;
+    font-family: poppins;
+}
+
+form {
+    padding: 10px;
+    width: 1200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-top: 15px;
+}
+
+#link {
+    height: 40px;
+    width: 600px;
+    border: none;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+#Generate {
+    margin-left: 5px;
+    height: 40px;
+    width: 200px;
+    background-color: rgba(219, 63, 28, 0.903);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: medium;
+}
+

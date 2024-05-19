@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{url_for('static',filename='login.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='registration.css')}}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -11,30 +11,27 @@
 </head>
 <body>
     <div class="logincontainer">
-        <div class="image-box">
-            <!--**image is in public folder**-->
-            <img src="{{url_for('static',filename='public/login.jpeg')}}" alt="girl studying">
-        </div>
         <div class="login-box">
-            {% if error!=""%}
-            <h3>{{error}}</h3>
-            {%endif%}
-            <form action="/valid" method="POST">
+            <form action="/register" method="POST">
                 <h1>Hello Again</h1>
                 <hr>
-                <input type="email" id="email" name="email" placeholder="email">
-                <input type="password" id="password" name="password" placeholder="password">
-                <a href="">forgot password?</a>
-                <button id="submit" type="submit" class="login">Login</button>
-                <a href="/registration"><div class="register">Register</div></a>
-                
+                <input type="email" id="email" name="email" placeholder="email" required>
+                <input type="password" id="password" name="password" placeholder="password" required>
+                <input type="text" id="name" name="name" placeholder="name" required>
+                <input type="date" name="dob" id="dob">
+                <input type="text" name="api" id="googleapi" placeholder="googleapi key" required>
+                <button id="submit" type="submit" class="login">Sign Up</button>
                 <p>or login with</p>
                 <div class="other">
                     <button class="icon">G</button>
                     <button class="icon">ln</button>
                 </div>
+                <p id="reg">Already a user? <span><a href="/login">Login Here!</a></span></p>
             </form>
-            
+        </div>
+        <div class="image-box">
+            <!--**image is in public folder**-->
+            <img src="{{url_for('static',filename='public/reg.jpeg')}}" alt="girl studying">
         </div>
     </div>
 </body>

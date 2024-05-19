@@ -17,15 +17,17 @@
         <a href="/dashboard" id="prev"> ◀ Go back</a> 
         <h1>Provide The Youtube Link</h1>
         <form action="/generate" method="POST">
-            <input type="text" name="link" id="link" placeholder="Enter the youtube link" required>
+            <input type="text" name="link" id="link" placeholder="Enter the youtube link" required="">
             <input type="submit" value="Generate" id="generate" name="generate">
         </form>
         <div class="notes" id="note">
             {%if data!=""%}
-            {{data|safe}}
+            {{data| safe}}
+            <form action="/save" method="POST">
+                <input type="submit" value="Save Notes" id="save">
+            </form>
             {%endif%}
         </div>
     </div>
 </body>
-
 </html>

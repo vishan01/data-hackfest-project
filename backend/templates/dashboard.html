@@ -21,7 +21,15 @@
                     <img id="img" src="{{url_for('static',filename='public/user.jpeg')}}" alt="user-pic">
                 </div>
                 <p>User Data</p>
+               
             </div>
+            {%if data!=""%}
+               <div style="text-align: left; ">
+                <p style="color: black; font-size: x-large; "><b>Name:</b> {{data[0]}}</p>
+                <p style="color: black; font-size: x-large; "><b>Email</b>: {{data[1]}}</p>
+                <p style="color: black; font-size: x-large; "><b>DOB: </b>{{data[2]}}</p>
+            </div>
+                {%endif%}
             <div class="logout" id="logout" ><a href="/logout" style="color:black;">LogOut</a></div>
         </div>
         <div class="elements element2">
@@ -37,7 +45,7 @@
             <div class="file-reader">
                 <a class="room-button" href="/file">
                     <h1 class="house">📜</h1>
-                    <h1>The File Reader</h1>
+                    <h1>Notes Archive</h1>
                     <p></p>
                 </a>
             </div>

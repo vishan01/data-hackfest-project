@@ -57,11 +57,6 @@ input{
 
 
 
-a {
-    text-decoration: none;
-    color: white;
-    align-self: flex-end;
-}
 .login{
 
     height: 45px;
@@ -70,16 +65,6 @@ a {
     border-radius: 5px;
     margin-bottom: 5px;
     margin-top: 25px;
-    background-color: #111631;
-    color: white;
-}
-.register{
-    text-align: center;
-    padding-top: 20px;
-    height: 45px;
-    width: 380px;
-    border: none;
-    border-radius: 5px;
     background-color: #111631;
     color: white;
 }
@@ -101,4 +86,8 @@ h1{
 }
 hr{
     width: 380px;
+}
+
+input[type="date"] {
+    background-color: #111631;
 }

@@ -15,21 +15,10 @@
 <body>
     <div class="container">
         <a href="/dashboard" id="prev"> ◀ Go back</a> 
-        <h1>Files</h1>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+        <h1>NOTES</h1>
+       {%if data!=""%}
+       {{data|safe}}
+       {%endif%}
     </div>
 </body>
 </html>
